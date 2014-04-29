@@ -46,6 +46,20 @@ if (user != null) {
 			java.sql.Date dat = new java.sql.Date(now.getTime());
 			String date =dat.toString();
 			if(alerts.addAlert(alerts.newId(),userService.getCurrentUser().getEmail(),request.getParameter("nom"),request.getParameter("numRue"),request.getParameter("nomRue"),request.getParameter("complementAdresse"),request.getParameter("codePostal"),request.getParameter("ville"),request.getParameter("lat"),request.getParameter("lon"),request.getParameter("description"),request.getParameter("type"),date)){
+				
+				  for(String mail: diffusion.listeAbonne(request.getParameter("nomRue"))){
+                      Properties props = new Properties();
+                      Mailer newEvent = new Mailer(Session.getDefaultInstance(props, null),
+                      "Vous recevez ce message car vous êtes abonnées à la liste de diffusion de la rue ."+request.getParameter("adresse")+System.getProperty("line.separator")+
+                      "Une nouvelle alerte est arrivée"+
+                      "=============================================================================="+System.getProperty("line.separator"),
+                      mail,
+                      mail,
+                      "Suppression d'alerte Sos.");
+              }
+				
+				
+				
 				response.sendRedirect("/map.jsp");
 			}
 			else{
