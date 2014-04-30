@@ -65,7 +65,7 @@ if (request.getParameter("type") != null) {
 	response.sendRedirect(s);
 }
 } else {	// Go back to the index if the user isn't logged in
-response.sendRedirect("/mapNonConnecte.jsp");
+	response.sendRedirect("/index.jsp");
 }
 
 %>

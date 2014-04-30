@@ -95,7 +95,7 @@ if (request.getParameter("mail") != null) {
 	"une petite ligne de code pour les ataux");	
 }
 } else {	// Go back to the index if the user isn't logged in
-response.sendRedirect("/mapNonConnecte.jsp");
+	response.sendRedirect("/index.jsp");
 }
 
 %>

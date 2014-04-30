@@ -71,10 +71,10 @@
     
 
 <div class="container" id="contenuP">
-	<h1>A Propos</h1>
+	<h1>A Propos - Documentation</h1>
 			<p>SOS Nantes est une application web réalisée dans le cadre du cours d'application web du Master ATAL de l'université de Nantes.</p>
 			<p>Cette application a pour but de pouvoir signaler des incidents ayant lieu sur Nantes et ses alentours, afin de pouvoir remonter les informations aux institutions compétentes et d'avertir les habitants qui le souhaitent par mail.</p>
-			<p>Auteurs de l'application : DAUREU Marie-Charlotte et AUFFRET Davy, Intervenant de cours : Pascal Molli</p>
+			<p>Auteurs de l'application : DAUREU Marie-Charlotte et AUFFRET Davy, Intervenant de cours : Pascal Molli.</p>
 			<p>Le code source de cette application est disponible sur <a href="https://github.com/tilwing/sosNantes">Github</a>.</p>
 	
 	<h2>Pourquoi utiliser ce site ?</h2>
@@ -98,33 +98,13 @@
 		<p>- La possibilité d'ajouter des commentaires aux alertes.</p>
 		<p>- La possibilité d'ajouter une photo de profil utilisateur.</p>
 		<p>- L'ajout d'un tchat utilisateur et d'un forum afin de pouvoir mieux connaître la communauté du site.</p>
+		<p>- Une autocomplétion pour les noms de rues, afin que vous puissiez ajouter vos alertes plus simplement.</p>
 	
 	<h2>Signaler un problème :</h2>
 	<p>Il est possible de rencontrer quelques erreurs au sein de cette application, ou bien de penser que des fonctionnalités sont manquantes.</p>
 	<p>Pour ceci, merci de contacter un administrateur afin d'améliorer les versions suivantes.</p>
 	<p  class="btn btn-default"><a href="mailto:micha.daureu@gmail.com">Envoyer un message !</a></p>
-	
-	<h2>Coté programmation...</h2>
-	
-	<h4>Fonctionnalités entièrement implémentées</h4>
-
-   <p>-  Inscription sur le site par une adresse gmail.</p>
-   <p>-  Modification du pseudo utilisateur.</p>
-   <p>-  Désinscription du site et des listes de diffusion.</p>
-   <p>-  Ajout d'alertes et suppressions de ses alertes uniquement.</p>
-   <p>- Inscription/désinscription à des rues.</p>
-   <p>- Affichage des informations sur une alerte par un simple clic sur la carte.</p>
-   <p>- Affichage des alertes en liste, et filtrage possible par nom de rue et par type d'alerte</p>
-   <p>-  Envoi de mails dans les cas suivants: Inscription/désinscription sur le site, abonnement à une rue, ajout d'une alerte dans une rue suivie, suppression d'une alerte dans une rue suivie, désinscription du site.</p>
-
-<h4>Fonctionnalités partiellement implémentées</h4>
-
-    Complétion automatique pour les adresses.
-
-<h4>Fonctionnalités non implémentées</h4>
-
-    <p>- Possibilité d'ajout d'images pour les alertes.</p>
-	
+		
 </div>
 
 	 <footer>
